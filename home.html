@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modus Vivendi: LifeDev</title>
+    <link rel="icon" type="image/png" href="pictures/icon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Great+Vibes&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="music/bgmusic.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Decorative Background Elements -->
+    <div id="landing-page" class="landing-page active">
+        <div class="landing-decorative">
+            <div class="landing-flower lf-1"></div>
+            <div class="landing-flower lf-2"></div>
+            <div class="landing-flower lf-3"></div>
+            <div class="landing-flower lf-4"></div>
+            <div class="landing-butterfly lb-1"></div>
+            <div class="landing-butterfly lb-2"></div>
+            <div class="landing-sparkle ls-1"></div>
+            <div class="landing-sparkle ls-2"></div>
+            <div class="landing-sparkle ls-3"></div>
+            <div class="landing-heart lh-1"></div>
+            <div class="landing-heart lh-2"></div>
+        </div>
+        
+        <div class="landing-content">
+            <div class="landing-logo">
+                <span class="landing-logo-serif">Modus Vivendi</span>
+                <span class="landing-logo-script">LifeDev</span>
+            </div>
+            <button class="landing-btn" onclick="enterWebsite()">
+                <span>Enter</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="decorative-bg">
+        <div class="flower flower-1"></div>
+        <div class="flower flower-2"></div>
+        <div class="flower flower-3"></div>
+        <div class="butterfly butterfly-1"></div>
+        <div class="butterfly butterfly-2"></div>
+        <div class="sparkle sparkle-1"></div>
+        <div class="sparkle sparkle-2"></div>
+        <div class="sparkle sparkle-3"></div>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span class="logo-serif"></span>Modus Vivendi</span> <span class="logo-script">LifeDev</span></div>
+            <div class="nav-links">
+                <a href="#front-page" class="tab-link active" onclick="showTab('front-page')">About Me</a>
+                <a href="#prenatal" class="tab-link" onclick="showTab('prenatal')">Let there be a child</a>
+                <a href="#infancy" class="tab-link" onclick="showTab('infancy')">Finding out my environment</a>
+                <a href="#early-childhood" class="tab-link" onclick="showTab('early-childhood')">I will follow you</a>
+                <a href="#middle-childhood" class="tab-link" onclick="showTab('middle-childhood')">Limitless Me</a>
+                <a href="#adolescence" class="tab-link" onclick="showTab('adolescence')">Exploring and Re-Development of my Youth</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="tab-container">
+        <div id="front-page" class="tab-content active">
+            <section class="diane-section scroll-animate">
+                <div class="diane-header">
+                    <div class="diane-info">
+                        <h1>Diane Marie B. Loceño</h1>
+                    </div>
+                    
+                    <div class="diane-container">
+                        <div class="diane-image-wrapper">
+                            <div class="diane-image">
+                                <img src="pictures/diane.jpg" alt="Diane">
+                            </div>
+                            <div class="info-dialogue">
+                                <div class="info-item">
+                                    <span class="label">Age:</span>
+                                    <span class="value">19</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Birthday:</span>
+                                    <span class="value">January 16, 2006</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Course:</span>
+                                    <span class="value">BSED-BIO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="description-section scroll-animate  ">
+                        <h2>About Me</h2>
+                        <p>Hi! I'm Diane, a 19-year-old Biology Education student with a passion for helping others and making a positive impact on the world. I'm driven by my dreams to become a pediatrician and contribute to UNICEF's mission to improve children's lives globally.</p>
+                    </div>
+
+                    <div class="traits-container">
+                        <div class="traits-box scroll-animate">
+                            <h3>🎤 Hobbies</h3>
+                            <ul>
+                                <li>Singing</li>
+                                <li>Dancing</li>
+                                <li>Reading</li>
+                                <li>Writing</li>
+                            </ul>
+                        </div>
+                        <img src="pictures/14.png" alt="Decorative Heart" class="overlap">
+                        
+                        
+                        <div class="traits-box scroll-animate">
+                            <h3>⭐ Interests</h3>
+                            <ul>
+                                <li>Photography</li>
+                                <li>Fashion</li>
+                                <li>Binge Watching Movies & Series</li>
+                            </ul>
+                        </div>
+
+                        <img src="pictures/8.png" alt="Decorative Heart" class="overlap2">
+                        <img src="pictures/13.png" alt="Decorative Heart" class="overlap3">
+                        <div class="traits-box scroll-animate">
+                            <h3>🎯 Goals</h3>
+                            <ul>
+                                <li>Become a Pediatrician</li>
+                                <li>Be a part of UNICEF</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="views-box scroll-animate">
+                        <img src="pictures/1.png" alt="Decorative Heart" class="overlap6">
+                        <h2>My Vision</h2>
+                        <p>"To live life for Grace and Wisdom."</p>
+                    </div>
+                    
+                    
+                </div>
+                
+
+                <div class="life-circle-container">
+                    <h2>My Life Circle - Ecological Map</h2>
+                    <p>Explore the people and environments that have shaped my life journey through my ecological map:</p>
+                    <div class="carousel">
+                        <div class="carousel-track">
+                            <img src="pictures/1.jpg">
+                            <img src="pictures/2.jpg">
+                            <img src="pictures/3.jpg">
+                            <img src="pictures/4.jpg">
+                            <img src="pictures/5.jpg">
+                            <img src="pictures/6.jpg">
+                            <img src="pictures/7.jpg">
+                        </div>
+
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+            </section>
+        </div>
+
+        <!-- PRENATAL STAGE -->
+        <div id="prenatal" class="tab-content">
+            <section class="stage-section scroll-animate">
+                <h1>Let there be a child</h1>
+                <h2 class="theme">Prenatal & Infancy (Birth)</h2>
+                
+                <div class="stage-images">
+                    <img src="pictures/1.png" alt="Decorative Heart" class="overlap7">
+                    <img src="pictures/4.png" alt="Decorative Heart" class="overlap8">
+                    <div class="stage-img polaroid"><img src="pictures/prenatal/1.jpg" alt="Prenatal 1"></div>
+                    <div class="stage-img polaroid"><img src="pictures/prenatal/2.jpg" alt="Prenatal 2"></div>
+                    <div class="stage-img polaroid"><img src="pictures/prenatal/3.jpg" alt="Prenatal 3"></div>
+                </div>
+
+                <div class="stage-content">
+                    <div class="significant-actions">
+                        <h3>Significant Actions</h3>
+                        <div class="significant-grid">
+                            <div class="theory-box scroll-animate"><p>Showing the Physical and Emotional changes I made since birth.</p></div>
+                            <div class="theory-box scroll-animate"><p>I had shown my emotions to react to my surroundings and to communicate.</p></div>
+                            <div class="theory-box scroll-animate"><p>I had started crawling and demonstrating minimal movements.</p></div>
+                            <div class="theory-box scroll-animate"><p>I learned to consume milk from the teat bottles.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="theories">
+                        <h3>Supporting Theories</h3>
+                        
+                        <div class="theory-box scroll-animate">
+                            <img src="pictures/8.png" alt="Decorative Heart" class="overlap12">
+                            <h4>Hierarchy of Needs (Abraham Maslow)</h4>
+                            <p><strong>"Showing the Physical and Emotional changes I made since birth."</strong></p>
+                            <p>Physiological needs (nutrition, warmth, health) are foundational.</p>
+                            <p><strong>"I had shown my emotions to react to my surroundings and to communicate."</strong></p>
+                            <p>Emotional security begins developing; supports safety and belonging needs.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Psychosocial Theory (Erik Erikson)</h4>
+                            <p><strong>"I cried so my caregivers could understand my needs."</strong></p>
+                            <p>Erikson's Trust vs. Mistrust stage explains that infants depend on caregivers to meet needs; crying is a natural emotional signal.</p>
+                            <p><strong>"I calmed down when someone held or comforted me."</strong></p>
+                            <p>Emotional stability is formed when consistent caregiving teaches the infant that the world is safe.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Behaviorist Learning Theory (B.F. Skinner)</h4>
+                            <p><strong>"I reacted more when people talked to me or smiled at me."</strong></p>
+                            <p>Positive reinforcement (attention, smiles, voice) strengthens a baby's social responses.</p>
+                            <p><strong>"I learned to recognize the sound of the milk bottle."</strong></p>
+                            <p>Infants associate sounds with rewards through conditioning (classical conditioning).</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <img src="pictures/10.png" alt="Decorative Heart" class="overlap13">
+                            <h4>Cognitive Development Theory (Jean Piaget – Sensorimotor Stage)</h4>
+                            <p><strong>"I started grabbing things near me."</strong></p>
+                            <p>Piaget states infants learn by exploring objects using touch, sight, and movement.</p>
+                            <p><strong>"I reacted to familiar faces and voices."</strong></p>
+                            <p>Sensorimotor development includes recognizing patterns and building memory.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="infancy" class="tab-content">
+            <section class="stage-section scroll-animate">
+                <h1>Finding out my environment</h1>
+                <h2 class="theme">Infancy and Toddlerhood (Birth to 2 Years)</h2>
+                <div class="stage-images">
+                    <img src="pictures/1.png" alt="Decorative Heart" class="overlap7">
+                    <img src="pictures/4.png" alt="Decorative Heart" class="overlap8">
+                    <div class="stage-img polaroid"><img src="pictures/infancy/1.jpg" alt="Infancy 1"></div>
+                    <div class="stage-img polaroid"><img src="pictures/infancy/2.jpg" alt="Infancy 2"></div>
+                    <div class="stage-img polaroid 3rd"><img src="pictures/infancy/3.jpg" alt="Infancy 3"></div>
+                </div>
+                
+                <div class="stage-content">
+                    <div class="significant-actions">
+                        <h3>Significant Actions</h3>
+                        <div class="significant-grid">
+                            <div class="theory-box scroll-animate"><p>Develop to talk, and say minimal words like: mama, papa, and other gibberish words.</p></div>
+                            <div class="theory-box scroll-animate"><p>I had developed to walk and stand on my own. Surprisingly I also manage to run. One of the stories from my uncles is that I ran towards the rice fields of my grandparents and played with mud.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also learned how to properly eat on my own.</p></div>
+                            <div class="theory-box scroll-animate"><p>I learned to play with dolls, and other toys.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also loved to interact and play with other kids.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also love analyzing photo albums, nature, and actions of other people.</p></div>
+                            <div class="theory-box scroll-animate"><p>When I turned 1 year old, my parents left me to work in different places, so I had to stay with my grandparents.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="theories"><img src="pictures/4.png" alt="Decorative Heart" class="overlap14">
+                        <h3>Supporting Theories</h3>
+                        
+                        <div class="theory-box scroll-animate">
+                            
+                            <h4>Nativist Language Theory (Noam Chomsky)</h4>
+                            <p><strong>"Developed to talk, and say minimal words like mama, papa, and other gibberish words."</strong></p>
+                            <p>According to Chomsky, babies naturally begin producing sounds because their brain is biologically prepared for language.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Maslow's Hierarchy of Needs (Abraham Maslow)</h4>
+                            <p><strong>"I had developed to walk and stand on my own… I also managed to run."</strong></p>
+                            <p>Physical growth supports physiological and safety needs.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Sensorimotor Stage (Jean Piaget)</h4>
+                            <p><strong>"I ran towards the rice fields of my grandparents and played with mud."</strong></p>
+                            <p>Piaget states that toddlers explore textures, movement, and the environment to build knowledge.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Behaviorism (B.F. Skinner)</h4>
+                            <p><strong>"I also learned how to properly eat on my own."</strong></p>
+                            <p>This behavior develops because caregivers repeatedly guide the child and reinforce correct actions.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Symbolic Play Theory (Piaget – Preoperational Beginnings)</h4>
+                            <p><strong>"I learned to play with dolls and other toys."</strong></p>
+                            <p>Piaget explains that toddlers begin pretending and using toys to express imagination and cognitive growth.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Sociocultural Theory (Lev Vygotsky)</h4>
+                            <p><strong>"I also loved to interact and play with other kids."</strong></p>
+                            <p>Vygotsky states children grow through shared play, imitation, and guided interactions.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Observational Learning (Albert Bandura)</h4>
+                            <p><strong>"I also love analyzing photo albums, nature, and actions of other people."</strong></p>
+                            <p>This shows early observational learning, a key concept in Bandura's theory.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- EARLY CHILDHOOD -->
+        <div id="early-childhood" class="tab-content">
+            <section class="stage-section scroll-animate">
+                <h1>I will follow you</h1>
+                <h2 class="theme">Early Childhood (2 to 5 Years)</h2>
+                <div class="stage-images">
+                    <img src="pictures/1.png" alt="Decorative Heart" class="overlap7">
+                    <img src="pictures/4.png" alt="Decorative Heart" class="overlap8">
+                    <div class="stage-img polaroid"><img src="pictures/early/1.jpg" alt="Early Childhood 1"></div>
+                    <div class="stage-img polaroid"><img src="pictures/early/2.jpg" alt="Early Childhood 2"></div>
+                    <div class="stage-img polaroid"><img src="pictures/early/3.jpg" alt="Early Childhood 3"></div>
+                </div>
+                
+                <div class="stage-content">
+                    <div class="significant-actions">
+                        <h3>Significant Actions</h3>
+                        <div class="significant-grid">
+                            <div class="theory-box scroll-animate"><p>I learned how to talk properly with the help of sign boards and guidance of my family to mimic what they were saying.</p></div>
+                            <div class="theory-box scroll-animate"><p>I learned movements and coordination through observing what others are doing.</p></div>
+                            <div class="theory-box scroll-animate"><p>I had learned to dress myself, and bathe myself; in short, I was taught how to take care of myself.</p></div>
+                            <div class="theory-box scroll-animate"><img src="pictures/16.png" alt="Decorative Heart" class="overlap15"><p>I developed a behavior of watching television to entertain myself.</p></div>
+                            <div class="theory-box scroll-animate"><p>This is where my grandmother started to teach me how to properly act in certain situations.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also started showing tantrums and I was being disciplined verbally or physically by my guardians.</p></div>
+                            <div class="theory-box scroll-animate"><p>We also moved to a different city to be with my father, and I was taken care of by my auntie.</p></div>
+                            <div class="theory-box scroll-animate"><p>My auntie taught me how to read, write, and to deeply understand other lessons so I could perform better than my other classmates.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also developed to be competitive with others, and be careful about what I say and act around others.</p></div>
+                            <div class="theory-box scroll-animate"><p>All of my actions are based on pleasing my parents and doing what I was told.</p></div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="theories">
+                        <h3>Supporting Theories</h3>
+                        
+                        <div class="theory-box scroll-animate">
+                            <h4>Social Learning Theory (Albert Bandura)</h4><img src="pictures/2.png" alt="Decorative Heart" class="overlap17">
+                            <p><strong>"I learned how to talk properly with the help of sign boards and guidance of my family to mimic what they were saying."</strong></p>
+                            <p> Language skills were developed by observing and imitating family members.</p>
+                            <p><strong>"I learned movements and coordination through observing what others are doing."</strong></p>
+                            <p> Motor skills and coordination were acquired and refined through observation of others.</p>
+                            <p><strong>"I develop a behavior of watching television to entertain myself."</strong></p>
+                            <p> Observing behaviors and routines on television helped in learning ways to entertain oneself.</p>
+                            <p><strong>"I also started showing tantrums and I was being disciplined verbally or physically by my guardians."</strong></p>
+                            <p> Reactions from adults helped in understanding social rules and behavior regulation.</p>
+                            <p><strong>"I also develop to be competitive with others, and be careful about what I say and act around others."</strong></p>
+                            <p> Observing peers and adults helped in learning social norms and appropriate social behavior.</p>
+
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Psychosocial Theory (Erik Erikson)</h4><img src="pictures/10.png" alt="Decorative Heart" class="overlap20">
+                            <p><strong>"I had learned to dress myself, and bathe myself, in short I was taught how to take care of myself."</strong></p>
+                            <p>Developing self-care skills builds autonomy (Autonomy vs. Shame and Doubt).</p>
+                            <p><strong>"I also started showing tantrums and I was being disciplined verbally or physically by my guardians."</strong></p>
+                            <p> Experiencing limits contributed to understanding acceptable behavior and developing self-control (Autonomy vs. Shame and Doubt).</p>
+                            <p><strong>"I also develop to be competitive with others, and be careful about what I say and act around others."</strong></p>
+                            <p> Developing initiative while considering social rules supported social awareness (Initiative vs. Guilt).</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Hierarchy of Needs (Abraham Maslow)</h4>
+                            <p><strong>"Developed to talk, and say minimal words like mama, papa, and other gibberish words."</strong></p>
+                            <p>Autonomy in self-care supports self-esteem needs. Actions aimed at pleasing parents satisfy belonging and esteem needs.</p>
+                            <p><strong>"All of my actions are based on pleasing my parents and doing what I was told."</strong></p>
+                            <p> Striving to meet approval satisfies belonging and esteem needs.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Sociocultural Theory (Lev Vygotsky)</h4><img src="pictures/11.png" alt="Decorative Heart" class="overlap17">
+                            <p><strong>"This is where my grandmother started to teach me how to properly act in certain situations."</strong></p>
+                            <p>Guidance helped internalize social norms and appropriate behaviors.</p>
+                            <p><strong>"I was taken care of by my auntie. My auntie taught me how to read, write, and to deeply understand other lessons so I can perform better than my other classmates."</strong></p>
+                            <p>Cognitive skills were enhanced through scaffolding and instruction from a more knowledgeable person.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Behaviorism (B.F. Skinner)</h4><img src="pictures/8.png" alt="Decorative Heart" class="overlap18">
+
+                            <p><strong>"All of my actions are based on pleasing my parents and doing what I was told."</strong></p>
+                            <p>Behaviors were shaped by reinforcement; following rules and pleasing caregivers resulted in positive outcomes, forming habits.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- MIDDLE & LATE CHILDHOOD -->
+        <div id="middle-childhood" class="tab-content">
+            <section class="stage-section scroll-animate">
+                <h1>Limitless Me</h1>
+                <h2 class="theme">Middle and Late Childhood (6 to 11 Years)</h2>
+                <div class="stage-images">
+                    <img src="pictures/4.png" alt="Decorative Heart" class="overlap8">
+                    <div class="stage-img polaroid"><img src="pictures/middle/1.jpg" alt="Middle Childhood 1"></div>
+                    <div class="stage-img polaroid"><img src="pictures/middle/2.jpg" alt="Middle Childhood 2"></div>
+                </div>
+                
+                <div class="stage-content">
+                    <div class="significant-actions">
+                        <h3>Significant Actions</h3>
+                        <div class="significant-grid">
+                            <div class="theory-box scroll-animate"><p>We moved back again to our province with my grandparents, and my younger cousin in a remote town in a house where everything that you can see is a rice field.</p></div>
+                            <div class="theory-box scroll-animate"><p>All I did was to go to school and study. That is why I became timid with other students and did not participate in school activities.</p></div>
+                            <div class="theory-box scroll-animate"><p>Our only entertainment was television, that is why I started reenacting the things we saw on television with my younger cousin because she was the only one I could play with. I started dressing up and acting like I was in a drama.</p></div>
+                            <div class="theory-box scroll-animate"><p>I was surrounded by nature, and when I developed the dream of wanting what to become, I thought everything was possible and that I could be accepted in multiple jobs because I had too many aspirations. I thought everything was easy to achieve.</p></div>
+                            <div class="theory-box scroll-animate"><p>Because of the thought that I can do everything, I developed a sense of confidence and joined a lot of school events like girl scout, majorette, volunteer red cross, journalism, and became an officer of a club.</p></div>
+                            <div class="theory-box scroll-animate"><p>I was a bubbly kid and an achiever because all I wanted to do was to make my parents proud.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also had a sense of maturity during that time because my grandmother was busy taking care of my younger cousin, and I was left to take care of myself. That is why I developed a sense of responsibility towards others and felt I should also take care of them.</p></div>
+                            <div class="theory-box scroll-animate"><p>Whenever I failed at something, I would get scared and cry because I knew my parents would be disappointed. That is why I became competitive and hated it when someone around me was not performing their best. This explains my leadership skills and being organized.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also developed a sense of curiosity to learn more about the things around me as I grew up.</p></div>
+
+                        </div>
+                    </div>
+
+                    <div class="theories">
+                        <h3>Supporting Theories</h3>
+                        
+                        <div class="theory-box scroll-animate">
+                            <h4>Social Learning Theory (Albert Bandura)</h4><img src="pictures/10.png" alt="Decorative Heart" class="overlap20">
+                            <p><strong>"Our only entertainment was television, that is why I started reenacting the things we see on the television, with my younger cousin because she is the only one I could play with. So I started dressing up and acting like I am in a drama."</strong></p>
+                            <p>Learned social behaviors, role-playing, and imitation by observing television and interacting with a peer.</p>
+                            <p><strong>"Because of the thought that I can do everything I had developed a sense of confidence so I joined a lot of school events like: girl scout, majorette, volunteer red cross, journalism, and became an officer of a club."</strong></p>
+                            <p>Observing others’ achievements inspired participation and confidence in social and leadership roles.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Psychosocial Theory (Erik Erikson)</h4><img src="pictures/8.png" alt="Decorative Heart" class="overlap18">
+                            <p><strong>"All I did was to go to school and study. That is why I became timid with other students and did not participate in school activities."</strong></p>
+                            <p>Conflict between Industry vs. Inferiority; child struggles with competence and social confidence.</p>
+                            <p><strong>"I was a bubbly kid, and an achiever because all I wanted to do was to make my parents proud."</strong></p>
+                            <p>Developing sense of competence and purpose in schoolwork and social achievements (Industry vs. Inferiority).</p>
+                            <p><strong>"I also had a sense of maturity during that time because my grandmother was busy taking care of my younger cousin, I was left to take care of myself. That is why I had this sense of responsibility towards others that I should also take care of them."</strong></p>
+                            <p>Early development of social responsibility and empathy, part of psychosocial growth.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Behaviorism (B.F. Skinner)</h4>
+                            <p><strong>"Whenever I fail on something I would get scared and cry because I know my parents would be disappointed. That is why I became competitive and I hate it when someone around me is not performing their best. That explains my leadership skills and being organized."</strong></p>
+                            <p>Behaviors shaped by reinforcement and consequences; striving to meet parental expectations strengthened habits of responsibility and leadership.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Sociocultural Theory (Lev Vygotsky)</h4><img src="pictures/8.png" alt="Decorative Heart" class="overlap18">
+                            <p><strong>"We moved back again to our province with my grandparents, and my younger cousin in a remote town in a house where everything that you can see is a rice field."</strong></p>
+                            <p>Interaction with a smaller social environment and family influenced social learning and problem-solving.</p>
+                            <p><strong>"I also developed a sense of curiosity to learn more about the things around me as I grew up."</strong></p>
+                            <p>Guided exploration and social scaffolding nurtured curiosity and cognitive development.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Maslow's Hierarchy of Needs (Abraham Maslow)</h4><img src="pictures/10.png" alt="Decorative Heart" class="overlap20">
+                            <p><strong>"We moved back again to our province with my grandparents, and my younger cousin in a remote town in a house where everything that you can see is a rice field."</strong></p>
+                            <p>Physiological needs and safety needs were foundational in a simpler environment.</p>
+                            <p><strong>"I was a bubbly kid, and an achiever because all I wanted to do was to make my parents proud."</strong></p>
+                            <p>Love and belonging, as well as esteem needs, motivated achievement.</p>
+                            <p><strong>"Because of the thought that I can do everything I had developed a sense of confidence so I joined a lot of school events like: girl scout, majorette, volunteer red cross, journalism, and became an officer of a club."</strong></p>
+                            <p>Esteem needs are fulfilled through competence, recognition, and social achievement.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Moral Development (Kohlberg)</h4>
+                            <p><strong>"Whenever I fail on something I would get scared and cry because I know my parents would be disappointed. That is why I became competitive and I hate it when someone around me is not performing their best."</strong></p>
+                            <p>Early pre-conventional stage of moral development; behavior is guided by consequences and understanding of “right” and “wrong” based on approval/disapproval.</p>
+                            <p><strong>"I also had a sense of maturity during that time because my grandmother was busy taking care of my younger cousin, I was left to take care of myself. That is why I had this sense of responsibility towards others that I should also take care of them."</strong></p>
+                            <p>Early moral reasoning and empathy develop, understanding duties toward others.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ADOLESCENCE -->
+        <div id="adolescence" class="tab-content">
+            <section class="stage-section scroll-animate">
+                <h1>Exploring and Re-Development of my Youth</h1>
+                <h2 class="theme">Adolescence (12 to 19 Years)</h2>
+                <div class="stage-images">
+                    <img src="pictures/1.png" alt="Decorative Heart" class="overlap7">
+                    <img src="pictures/4.png" alt="Decorative Heart" class="overlap8">
+                    <div class="stage-img polaroid"><img src="pictures/adol/1.JPG" alt="Adolescence 1"></div>
+                    <div class="stage-img polaroid"><img src="pictures/adol/2.JPG" alt="Adolescence 2"></div>
+                    <div class="stage-img polaroid"><img src="pictures/adol/3.JPG" alt="Adolescence 3"></div>
+                    <div class="stage-img polaroid"><img src="pictures/adol/4.JPG" alt="Adolescence 4"></div>
+                    <div class="stage-img polaroid"><img src="pictures/adol/5.JPG" alt="Adolescence 5"></div>
+                </div>
+                
+                <div class="stage-content">
+                    <div class="significant-actions">
+                        <h3>Significant Actions</h3>
+                        <div class="significant-grid">
+                            <div class="theory-box scroll-animate"><p>This is the time that I moved back with my father in Manila because I was at the right age that they trusted me to be responsible.</p></div>
+                            <div class="theory-box scroll-animate"><p>As a competitive student and with a sudden change of environment, I was able to learn that there are better students than me, which made me introverted and caused me to not perform well in school.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also grew distant from my parents, as I was really fond of my grandparents. That is why I always hung out with friends that I had in school.</p></div>
+                            <div class="theory-box scroll-animate"><p>I learned how to lie about my whereabouts just to hang out with others and please them to like me as a friend.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also liked to spend my time using my gadgets because it was the first time I had ever used the internet, and I was really happy that I could access everything with my gadget.</p></div>
+                            <div class="theory-box scroll-animate"><p>As time went by, I observed that I became worn out by academics and lost interest in being a top student.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also stopped listening to my parents' demands because I became self-centered.</p></div>
+                            <div class="theory-box scroll-animate"><p>During this time, I also experienced bullying from my friends, which affected me and made me insecure about myself.</p></div>
+                            <div class="theory-box scroll-animate"><p>I was taught to be independent growing up, so I re-evaluated my life decisions and healed from my trauma to become a better person.</p></div>
+                            <div class="theory-box scroll-animate"><p>I started thinking about my plans and dreams, which led me to want to become a doctor.</p></div>
+                            <div class="theory-box scroll-animate"><p>As I started focusing on my growth, I noticed changes in my life: I became more critical about my decisions, ensured I stayed tidy, and made sure to achieve my daily plans.</p></div>
+                            <div class="theory-box scroll-animate"><p>I also became competitive again because that is my nature—to always do my best and not change myself even with sudden changes in life.</p></div>
+                            <div class="theory-box scroll-animate"><p>Now, I started to become confident about myself, discovering new hobbies, and focusing on achieving my dreams.</p></div>
+
+                        </div>
+                    </div>
+
+                    <div class="theories">
+                        <h3>Supporting Theories</h3>
+                        
+                        <div class="theory-box scroll-animate">
+                            <h4>Psychosocial Theory (Erik Erikson)</h4>
+                            <p><strong>"This is the time that I moved back with my father in Manila because I was at the right age that they trusted me to be responsible."</strong></p>
+                            <p>Reflects development of Identity vs. Role Confusion; adolescents begin forming personal identity and autonomy.</p>
+                            <p><strong>"I also grew distant relationships with my parents, as I am really fond of my grandparents. That is why I always hangout with friends that I had in school."</strong></p>
+                            <p>Adolescents develop social identity and peer influence becomes stronger; exploring relationships is key to forming self-identity.</p>
+                            <p><strong>"I was taught to be independent growing up so I re-evaluated my life decisions and heal from my trauma growing up to become a better person."</strong></p>
+                            <p>Adolescents develop self-reflection and personal identity as part of psychosocial growth.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Social Learning Theory (Albert Bandura)</h4>
+                            <p><strong>"I also learned how to lie about my whereabouts just to hangout with others to please them to like me as a friend."</strong></p>
+                            <p>Learning social behaviors and norms through observation and peer influence.</p>
+                            <p><strong>"I also liked to spend my time using my gadgets because it was the first time I had ever used the internet and I was really happy that I could access everything with my gadget."</strong></p>
+                            <p>Learning and exploring social and informational content through observation online.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Behaviorism (B.F. Skinner)</h4><img src="pictures/10.png" alt="Decorative Heart" class="overlap20">
+                            <p><strong>"I also stopped listening to my parents' demands because I became self-centered."</strong></p>
+                            <p>Behavior shaped by consequences and reinforcement; autonomy drives new patterns of decision-making.</p>
+                            <p><strong>"I also become competitive again because that is my nature, to always do my best and not change myself even if there are sudden changes in my life."</strong></p>
+                            <p>Repetition of behaviors reinforced by personal satisfaction and past experiences.</p>
+                            
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Sociocultural Theory (Lev Vygotsky)</h4>
+                            <p><strong>"Within this time I also experience bullying from my friends that affects me to become insecure about myself."</strong></p>
+                            <p>Social environment and peer interactions influence emotional and cognitive development.</p>
+                            <p><strong>"I started thinking about my plans and dreams, and that led me to want to become a doctor."</strong></p>
+                            <p>Social context and guidance (family, teachers, peers) help shape career aspirations and cognitive planning.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Hierarchy of Needs (Abraham Maslow)</h4><img src="pictures/10.png" alt="Decorative Heart" class="overlap20">
+                            <p><strong>"I was taught to be independent growing up so I re-evaluated my life decisions and heal from my trauma growing up to become a better person."</strong></p>
+                            <p>Psychological needs such as safety, love, and belonging; rebuilding emotional security.</p>
+                            <p><strong>"Now, I started to become confident about myself, discovering new hobbies, and focusing on achieving my dreams."</strong></p>
+                            <p>Esteem and self-actualization needs; personal growth, confidence, and fulfillment.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Moral Development (Lawrence Kohlberg)</h4>
+                            <p><strong>"I also learned how to lie about my whereabouts just to hangout with others to please them to like me as a friend."</strong></p>
+                            <p>Pre-conventional moral reasoning; behavior guided by approval and avoiding social consequences.</p>
+                            <p><strong>"I started thinking about my plans and dreams, and that led me to want to become a doctor."</strong></p>
+                            <p>Early post-conventional reasoning; internalized values guide decision-making and long-term goals.</p>
+                        </div>
+
+                        <div class="theory-box scroll-animate">
+                            <h4>Cognitive Development Theory (Jean Piaget – Formal Operational Stage)</h4><img src="pictures/1.png" alt="Decorative Heart" class="overlap19">
+                            <p><strong>"I started thinking about my plans and dreams, and that led me to want to become a doctor."</strong></p>
+                            <p>Adolescents engage in abstract thinking, hypothetical reasoning, and planning for the future.</p>
+                            <p><strong>"As I started focusing on my growth I had seen some changes in my life; I became critical about my decisions, I always make sure to be tidy, and I always make sure that I am able to achieve my plans within the day."</strong></p>
+                            <p>Development of metacognition, self-monitoring, and logical thinking.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="landing-logo">
+                <span class="landing-logo-serif">Modus Vivendi</span>
+                <p>"To live life for Grace and Wisdom." </p>
+                <span class="landing-logo-script">LifeDev</span>
+            </div>
+        
+    </footer>
+
+    <script>
+        
+        function enterWebsite() {
+            const landingPage = document.getElementById('landing-page');
+            const mainHeader = document.getElementById('main-header');
+            const mainContent = document.getElementById('main-content');
+            
+            landingPage.classList.add('fade-out');
+            
+            setTimeout(() => {
+                landingPage.style.display = 'none';
+                mainHeader.style.display = 'block';
+                mainContent.style.display = 'block';
+                
+                setTimeout(() => {
+                    mainHeader.classList.add('fade-in');
+                    mainContent.classList.add('fade-in');
+                }, 50);
+            }, 600);
+        }
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all links
+            const links = document.querySelectorAll('.tab-link');
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Show selected tab content
+            const selectedTab = document.getElementById(tabName);
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+
+            // Add active class to clicked link
+            event.target.classList.add('active');
+        }
+
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        
+        let index = 0;
+
+        function showSlide(i) {
+            index = (i + slides.length) % slides.length;
+            track.style.transform = `translateX(-${index * 600}px)`;
+        }
+
+        document.querySelector('.prev').onclick = () => showSlide(index - 1);
+        document.querySelector('.next').onclick = () => showSlide(index + 1);
+
+        const scrollElements = document.querySelectorAll('.scroll-animate');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target); // Animate only once
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        scrollElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
