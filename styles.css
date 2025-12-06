@@ -5,14 +5,15 @@
 }
 
 :root {
-    --font-heading: 'Playfair Display', serif;
-    --font-script: 'Great Vibes', cursive;
-    --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-heading: 'Cormorant Garamond', 'Playfair Display', serif;
+    --font-script: 'Allura', 'Great Vibes', cursive;
+    --font-body: 'Crimson Pro', 'Georgia', serif;
+    --font-accent: 'Libre Baskerville', serif;
     --bg-cream: #fff6f8;
     --accent-rose: #ff7aa9; /* medium rose */
     --accent-deep: #b24a78; /* deeper rose */
     --accent-gold: #edd6e6; /* pale gold/cream */
-    --muted-gray: #6b5b6b;
+    --muted-gray: #6b5766;
 }
 
 body {
@@ -762,7 +763,7 @@ header::after {
 
 /* Tab Container */
 .tab-container {
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
     min-height: calc(100vh - 150px);
     position: relative;
@@ -909,13 +910,8 @@ header::after {
     color: var(--accent-deep);
     margin-bottom: 35px;
     font-weight: 700;
-    letter-spacing: -0.8px;
+    letter-spacing: 0.8px;
     line-height: 1.2;
-    text-shadow: 
-        0 0 10px rgba(255, 122, 154, 0.4),
-        0 0 20px rgba(255, 122, 154, 0.3),
-        0 0 30px rgba(178, 74, 120, 0.25),
-        0 0 40px rgba(255, 122, 154, 0.15);
     animation: glow-pulse 3s ease-in-out infinite;
 }
 .diane-info h1::first-letter {
@@ -933,7 +929,7 @@ header::after {
             0 0 30px rgba(178, 74, 120, 0.25),
             0 0 40px rgba(255, 122, 154, 0.15);
     }
-    50% {
+    20% {
         text-shadow: 
             0 0 15px rgba(255, 122, 154, 0.6),
             0 0 30px rgba(255, 122, 154, 0.5),
@@ -1144,7 +1140,7 @@ header::after {
 .overlap3 {
     position: absolute;
     top:100;       /* align to top edge */
-    left: 610px; /* stick it slightly outside the div */
+    left: 800px; /* stick it slightly outside the div */
     width: 60px;  /* adjust size */
     transform: rotate(140deg); /* subtle rotation for style */
     z-index: 10;  /* above div */
@@ -1176,9 +1172,9 @@ header::after {
 .overlap7 {
     position: absolute;
     top: -20px;;       /* align to top edge */
-    left: 270px; /* stick it slightly outside the div */
+    left: 250px; /* stick it slightly outside the div */
     width: 100px;  /* adjust size */
-    transform: rotate(40deg); /* subtle rotation for style */
+    transform: rotate(-45deg); /* subtle rotation for style */
     z-index: 10 ;  /* above div */
 }
 .overlap8 {
@@ -1345,19 +1341,56 @@ header::after {
     flex-direction: column;
     padding: 10px;
     border-radius: 15px;    
+    width: 100%;
+    order: 1;
 }
 .significant-actions h3 {
     text-align: center;
     color: var(--accent-deep);
-    margin-bottom: 25px;
+    margin-bottom: 0;
     font-size: 22px;
     font-weight: 700;
     font-family: var(--font-heading);
+    cursor: pointer;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 248, 252, 0.95) 100%);
+    border-radius: 12px;
+    border: 2px solid rgba(178, 74, 120, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    user-select: none;
+}
+.significant-actions h3:hover {
+    background: linear-gradient(135deg, rgba(255, 248, 252, 1) 0%, rgba(255, 240, 248, 1) 100%);
+    border-color: var(--accent-rose);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(178, 74, 120, 0.15);
+}
+.significant-actions h3::after {
+    content: "▼";
+    position: absolute;
+    right: 25px;
+    transition: transform 0.3s ease;
+    color: var(--accent-rose);
+    font-size: 16px;
+}
+.significant-actions h3.active::after {
+    transform: rotate(180deg);
 }
 .significant-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, margin-top 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    margin-top: 0;
+}
+.significant-grid.active {
+    max-height: 2000px;
+    opacity: 1;
+    margin-top: 25px;
 }
 .significant-actions ul {
     list-style: none;
@@ -1381,14 +1414,54 @@ header::after {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    order: 2;
 }
 .theories h3 {
     text-align: center;
     color: var(--accent-deep);
-    margin-bottom: 10px;
+    margin-bottom: 0;
     font-size: 22px;
     font-weight: 700;
     font-family: var(--font-heading);
+    cursor: pointer;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 248, 252, 0.95) 100%);
+    border-radius: 12px;
+    border: 2px solid rgba(178, 74, 120, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    user-select: none;
+}
+.theories h3:hover {
+    background: linear-gradient(135deg, rgba(255, 248, 252, 1) 0%, rgba(255, 240, 248, 1) 100%);
+    border-color: var(--accent-rose);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(178, 74, 120, 0.15);
+}
+.theories h3::after {
+    content: "▼";
+    position: absolute;
+    right: 25px;
+    transition: transform 0.3s ease;
+    color: var(--accent-rose);
+    font-size: 16px;
+}
+.theories h3.active::after {
+    transform: rotate(180deg);
+}
+.theories-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, margin-top 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.theories-content.active {
+    max-height: 3000px;
+    opacity: 1;
+    margin-top: 25px;
 }
 .theory-box {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 248, 252, 0.9) 100%);
@@ -1426,11 +1499,6 @@ header::after {
 .theory-box p strong {
     color: var(--accent-rose);
     font-weight: 600;
-}
-
-.theory-box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(178, 74, 120, 0.15);
 }
 
 .stage-img,
@@ -1491,25 +1559,35 @@ header::after {
 
 /* FOOTER */
 .footer {
-    background: linear-gradient(135deg, var(--accent-rose) 50%, var(--accent-deep) 100%);
-    padding: 50px 40px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 248, 252, 0.95) 100%);
+    padding: 30px 40px;
     text-align: center;
     margin-top: 70px;
-    border-top: 2px solid rgba(178, 74, 120, 0.2);
+    border-top: 1px solid rgba(178, 74, 120, 0.15);
     position: relative;
     z-index: 10;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.footer::before {
+    content: "✦";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--accent-rose);
+    font-size: 20px;
+    background: var(--bg-cream);
+    padding: 0 15px;
 }
 
 .footer p {
-    color: white;
+    color: var(--accent-deep);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.6;
-    margin-bottom: 15px;
-    font-size: 40px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    font-family: 'Great Vibes', cursive;;
+    margin-bottom: 0;
+    font-family: var(--font-script);
+    opacity: 0.9;
 }
 
 /* RESPONSIVE DESIGN */
@@ -1671,3 +1749,127 @@ header::after {
 .overlap19 { transform: rotate(7deg); top: -40px; left: 5%; }
 .overlap20 { transform: rotate(-4deg); bottom: -40px; right: 12%; }
 
+
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.banner .slider{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 2;
+}
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(550px);
+}
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner .content{
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, 100vw);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.banner .content h1{
+    font-family: 'ICA Rubrik';
+    font-size: 10em;
+    line-height: 1em;
+    color: #25283B;
+    position: relative;
+}
+.banner .content h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+}
+.banner .content .author{
+    font-family: Poppins;
+    text-align: right;
+    max-width: 200px;
+}
+.banner .content h2{
+    font-size: 3em;
+}
+
+@media screen and (max-width: 1023px) {
+    .banner .slider{
+        width: 160px;
+        height: 200px;
+        left: calc(50% - 80px);
+    }
+    .banner .slider .item{
+        transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(300px);
+    }
+    .banner .content h1{
+        text-align: center;
+        width: 100%;
+        text-shadow: 0 10px 20px #000;
+        font-size: 7em;
+    }
+    .banner .content .author{
+        color: #fff;
+        padding: 20px;
+        text-shadow: 0 10px 20px #000;
+        z-index: 2;
+        max-width: unset;
+        width: 100%;
+        text-align: center;
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .banner .slider{
+        width: 100px;
+        height: 150px;
+        left: calc(50% - 50px);
+    }
+    .banner .slider .item{
+        transform: 
+            rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(180px);
+    }
+    .banner .content h1{
+        font-size: 5em;
+    }
+}
