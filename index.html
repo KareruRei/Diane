@@ -64,14 +64,39 @@
             </div>
         </nav>
     </header>
+    
 
     <div class="tab-container">
         <div id="front-page" class="tab-content active">
+            <div class="banner">
+                    <div class="slider" style="--quantity: 10">
+                    <div class="item" style="--position: 1"><img src="pictures/prenatal/1.jpg" alt=""></div>
+                    <div class="item" style="--position: 2"><img src="pictures/prenatal/2.jpg" alt=""></div>
+                    <div class="item" style="--position: 3"><img src="pictures/infancy/1.jpg" alt=""></div>
+                    <div class="item" style="--position: 4"><img src="pictures/infancy/2.jpg" alt=""></div>
+                    <div class="item" style="--position: 5"><img src="pictures/early/1.jpg" alt=""></div>
+                    <div class="item" style="--position: 6"><img src="pictures/early/2.jpg" alt=""></div>
+                    <div class="item" style="--position: 7"><img src="pictures/middle/1.jpg" alt=""></div>
+                    <div class="item" style="--position: 8"><img src="pictures/middle/2.jpg" alt=""></div>
+                    <div class="item" style="--position: 9"><img src="pictures/adol/1.JPG" alt=""></div>
+                    <div class="item" style="--position: 10"><img src="pictures/adol/2.JPG" alt=""></div>
+                </div>
+                <div class="content">
+                    <h1>
+                        Modus <span class="vivendi">Vivendi</span>
+                    </h1>
+                    <div class="model"></div>
+                </div>
+            </div>
             <section class="diane-section scroll-animate">
                 <div class="diane-header">
                     <div class="diane-info">
                         <h1>Diane Marie B. Loceño</h1>
                     </div>
+
+                    
+                    
+    
                     
                     <div class="diane-container">
                         <div class="diane-image-wrapper">
@@ -179,7 +204,7 @@
 
                 <div class="stage-content">
                     <div class="significant-actions">
-                        <h3>Significant Actions</h3>
+                        <h3 onclick="toggleDropdown(this)">Significant Actions</h3>
                         <div class="significant-grid">
                             <div class="theory-box scroll-animate"><p>Showing the Physical and Emotional changes I made since birth.</p></div>
                             <div class="theory-box scroll-animate"><p>I had shown my emotions to react to my surroundings and to communicate.</p></div>
@@ -189,8 +214,8 @@
                     </div>
 
                     <div class="theories">
-                        <h3>Supporting Theories</h3>
-                        
+                        <h3 onclick="toggleDropdown(this)">Supporting Theories</h3>
+                        <div class="theories-content">
                         <div class="theory-box scroll-animate">
                             <img src="pictures/8.png" alt="Decorative Heart" class="overlap12">
                             <h4>Hierarchy of Needs (Abraham Maslow)</h4>
@@ -224,6 +249,7 @@
                             <p><strong>"I reacted to familiar faces and voices."</strong></p>
                             <p>Sensorimotor development includes recognizing patterns and building memory.</p>
                         </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -243,7 +269,7 @@
                 
                 <div class="stage-content">
                     <div class="significant-actions">
-                        <h3>Significant Actions</h3>
+                        <h3 onclick="toggleDropdown(this)">Significant Actions</h3>
                         <div class="significant-grid">
                             <div class="theory-box scroll-animate"><p>Develop to talk, and say minimal words like: mama, papa, and other gibberish words.</p></div>
                             <div class="theory-box scroll-animate"><p>I had developed to walk and stand on my own. Surprisingly I also manage to run. One of the stories from my uncles is that I ran towards the rice fields of my grandparents and played with mud.</p></div>
@@ -256,8 +282,8 @@
                     </div>
 
                     <div class="theories"><img src="pictures/4.png" alt="Decorative Heart" class="overlap14">
-                        <h3>Supporting Theories</h3>
-                        
+                        <h3 onclick="toggleDropdown(this)">Supporting Theories</h3>
+                        <div class="theories-content">
                         <div class="theory-box scroll-animate">
                             
                             <h4>Nativist Language Theory (Noam Chomsky)</h4>
@@ -300,6 +326,7 @@
                             <p><strong>"I also love analyzing photo albums, nature, and actions of other people."</strong></p>
                             <p>This shows early observational learning, a key concept in Bandura's theory.</p>
                         </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -320,7 +347,7 @@
                 
                 <div class="stage-content">
                     <div class="significant-actions">
-                        <h3>Significant Actions</h3>
+                        <h3 onclick="toggleDropdown(this)">Significant Actions</h3>
                         <div class="significant-grid">
                             <div class="theory-box scroll-animate"><p>I learned how to talk properly with the help of sign boards and guidance of my family to mimic what they were saying.</p></div>
                             <div class="theory-box scroll-animate"><p>I learned movements and coordination through observing what others are doing.</p></div>
@@ -337,8 +364,8 @@
                     </div>
 
                     <div class="theories">
-                        <h3>Supporting Theories</h3>
-                        
+                        <h3 onclick="toggleDropdown(this)">Supporting Theories</h3>
+                        <div class="theories-content">
                         <div class="theory-box scroll-animate">
                             <h4>Social Learning Theory (Albert Bandura)</h4><img src="pictures/2.png" alt="Decorative Heart" class="overlap17">
                             <p><strong>"I learned how to talk properly with the help of sign boards and guidance of my family to mimic what they were saying."</strong></p>
@@ -386,6 +413,7 @@
                             <p><strong>"All of my actions are based on pleasing my parents and doing what I was told."</strong></p>
                             <p>Behaviors were shaped by reinforcement; following rules and pleasing caregivers resulted in positive outcomes, forming habits.</p>
                         </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -404,7 +432,7 @@
                 
                 <div class="stage-content">
                     <div class="significant-actions">
-                        <h3>Significant Actions</h3>
+                        <h3 onclick="toggleDropdown(this)">Significant Actions</h3>
                         <div class="significant-grid">
                             <div class="theory-box scroll-animate"><p>We moved back again to our province with my grandparents, and my younger cousin in a remote town in a house where everything that you can see is a rice field.</p></div>
                             <div class="theory-box scroll-animate"><p>All I did was to go to school and study. That is why I became timid with other students and did not participate in school activities.</p></div>
@@ -420,8 +448,8 @@
                     </div>
 
                     <div class="theories">
-                        <h3>Supporting Theories</h3>
-                        
+                        <h3 onclick="toggleDropdown(this)">Supporting Theories</h3>
+                        <div class="theories-content">
                         <div class="theory-box scroll-animate">
                             <h4>Social Learning Theory (Albert Bandura)</h4><img src="pictures/10.png" alt="Decorative Heart" class="overlap20">
                             <p><strong>"Our only entertainment was television, that is why I started reenacting the things we see on the television, with my younger cousin because she is the only one I could play with. So I started dressing up and acting like I am in a drama."</strong></p>
@@ -471,6 +499,7 @@
                             <p><strong>"I also had a sense of maturity during that time because my grandmother was busy taking care of my younger cousin, I was left to take care of myself. That is why I had this sense of responsibility towards others that I should also take care of them."</strong></p>
                             <p>Early moral reasoning and empathy develop, understanding duties toward others.</p>
                         </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -487,13 +516,13 @@
                     <div class="stage-img polaroid"><img src="pictures/adol/1.JPG" alt="Adolescence 1"></div>
                     <div class="stage-img polaroid"><img src="pictures/adol/2.JPG" alt="Adolescence 2"></div>
                     <div class="stage-img polaroid"><img src="pictures/adol/3.JPG" alt="Adolescence 3"></div>
-                    <div class="stage-img polaroid"><img src="pictures/adol/4.jpg" alt="Adolescence 4"></div>
-                    <div class="stage-img polaroid"><img src="pictures/adol/5.jpg" alt="Adolescence 5"></div>
+                    <div class="stage-img polaroid"><img src="pictures/adol/4.JPG" alt="Adolescence 4"></div>
+                    <div class="stage-img polaroid"><img src="pictures/adol/5.JPG" alt="Adolescence 5"></div>
                 </div>
                 
                 <div class="stage-content">
                     <div class="significant-actions">
-                        <h3>Significant Actions</h3>
+                        <h3 onclick="toggleDropdown(this)">Significant Actions</h3>
                         <div class="significant-grid">
                             <div class="theory-box scroll-animate"><p>This is the time that I moved back with my father in Manila because I was at the right age that they trusted me to be responsible.</p></div>
                             <div class="theory-box scroll-animate"><p>As a competitive student and with a sudden change of environment, I was able to learn that there are better students than me, which made me introverted and caused me to not perform well in school.</p></div>
@@ -513,8 +542,8 @@
                     </div>
 
                     <div class="theories">
-                        <h3>Supporting Theories</h3>
-                        
+                        <h3 onclick="toggleDropdown(this)">Supporting Theories</h3>
+                        <div class="theories-content">
                         <div class="theory-box scroll-animate">
                             <h4>Psychosocial Theory (Erik Erikson)</h4>
                             <p><strong>"This is the time that I moved back with my father in Manila because I was at the right age that they trusted me to be responsible."</strong></p>
@@ -573,6 +602,7 @@
                             <p><strong>"As I started focusing on my growth I had seen some changes in my life; I became critical about my decisions, I always make sure to be tidy, and I always make sure that I am able to achieve my plans within the day."</strong></p>
                             <p>Development of metacognition, self-monitoring, and logical thinking.</p>
                         </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -589,12 +619,12 @@
     </footer>
 
     <script>
-
-        document.addEventListener('click', () => {
-            const audio = document.getElementById('bgAudio');
-            audio.muted = false;
-            audio.play();
-          });
+  // Unmute after user interacts
+  document.addEventListener('click', () => {
+    const audio = document.getElementById('bgAudio');
+    audio.muted = false;
+    audio.play();
+  });
         
         function enterWebsite() {
             const landingPage = document.getElementById('landing-page');
@@ -664,6 +694,12 @@
         });
 
         scrollElements.forEach(el => observer.observe(el));
+
+        function toggleDropdown(header) {
+            header.classList.toggle('active');
+            const content = header.nextElementSibling;
+            content.classList.toggle('active');
+        }
     </script>
 </body>
 </html>
